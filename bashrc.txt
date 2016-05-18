@@ -1,5 +1,5 @@
-11g aa use bash mod
-export ORACLE_SID=lever
+ï»¿#11g
+export ORACLE_SID=SimNowLever
 
 export ORACLE_BASE=/u01/app/oracle
 export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/dbhome_1
@@ -21,13 +21,13 @@ alias gscripts='cd $ORACLE_HOME/rdbms/admin'
 alias gdbs='cd $ORACLE_HOME/dbs'
 alias gnet='cd $ORACLE_HOME/network/admin'
 
-#ÈÃbash Ä£Äâ vi µÄ²Ù×÷¡£
+#è®©bashçš„å‘½ä»¤æ“ä½œèƒ½å’Œviä¸€è‡´
 set -o vi
 
 
 
-10g
-export ORACLE_SID=lever
+#10g
+export ORACLE_SID=SimNowLever
 
 export ORACLE_BASE=/u01/app/oracle
 export ORACLE_HOME=$ORACLE_BASE/product/10.2.0/db_1
