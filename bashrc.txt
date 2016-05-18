@@ -1,0 +1,54 @@
+11g
+export ORACLE_SID=lever
+
+export ORACLE_BASE=/u01/app/oracle
+export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/dbhome_1
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+
+export SQLPATH=/home/oracle/tools
+export PATH=$ORACLE_HOME/bin:$ORACLE_HOME/jdk/bin:$PATH
+
+alias vi='vim'
+alias ll='ls -lrth'
+alias dba='sqlplus / as sysdba'
+
+alias gbase='cd $ORACLE_BASE'
+alias gdata='cd $ORACLE_BASE/oradata/$ORACLE_SID'
+alias gdump='cd $ORACLE_BASE/diag/rdbms/$ORACLE_SID/$ORACLE_SID/trace'
+
+alias ghome='cd $ORACLE_HOME'
+alias gscripts='cd $ORACLE_HOME/rdbms/admin'
+alias gdbs='cd $ORACLE_HOME/dbs'
+alias gnet='cd $ORACLE_HOME/network/admin'
+
+#ÈÃbash Ä£Äâ vi µÄ²Ù×÷¡£
+set -o vi
+
+
+
+10g
+export ORACLE_SID=lever
+
+export ORACLE_BASE=/u01/app/oracle
+export ORACLE_HOME=$ORACLE_BASE/product/10.2.0/db_1
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+export PATH=$ORACLE_HOME/bin:$ORACLE_HOME/jdk/bin:$PATH
+
+export SQLPATH=/home/oracle/tools
+export PATH=$ORACLE_HOME/bin:$ORACLE_HOME/jdk/bin:$PATH
+
+alias vi='vim'
+alias ll='ls -lrth'
+alias dba='sqlplus / as sysdba'
+
+alias gbase='cd $ORACLE_BASE'
+alias gdata='cd $ORACLE_BASE/oradata/$ORACLE_SID'
+alias gdump='cd $ORACLE_BASE/admin/$ORACLE_SID'
+alias alert='tail -20f $ORACLE_BASE/admin/$ORACLE_SID/bdump/alert_$ORACLE_SID.log'
+
+alias ghome='cd $ORACLE_HOME'
+alias gscripts='cd $ORACLE_HOME/rdbms/admin'
+alias gdbs='cd $ORACLE_HOME/dbs'
+alias gnet='cd $ORACLE_HOME/network/admin'
+
+set -o vi
