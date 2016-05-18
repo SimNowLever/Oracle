@@ -1,4 +1,4 @@
-11g
+11g aa
 export ORACLE_SID=lever
 
 export ORACLE_BASE=/u01/app/oracle
